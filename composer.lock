@@ -73,16 +73,16 @@
         },
         {
             "name": "1994/social-images-craft",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1994limited/social-images-craft.git",
-                "reference": "192c14426a5bd0ccaa6ddd1ad6de98b7680f0632"
+                "reference": "913e5bfcb41518814f026ba8270dfa735a86e14c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1994limited/social-images-craft/zipball/192c14426a5bd0ccaa6ddd1ad6de98b7680f0632",
-                "reference": "192c14426a5bd0ccaa6ddd1ad6de98b7680f0632",
+                "url": "https://api.github.com/repos/1994limited/social-images-craft/zipball/913e5bfcb41518814f026ba8270dfa735a86e14c",
+                "reference": "913e5bfcb41518814f026ba8270dfa735a86e14c",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
                 "issues": "https://github.com/1994limited/social-images-craft/issues",
                 "source": "https://github.com/1994limited/social-images-craft"
             },
-            "time": "2026-10-17T22:49:01+00:00"
+            "time": "2026-10-17T22:54:33+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
