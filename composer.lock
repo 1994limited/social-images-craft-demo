@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2103cb0a488958205596869ebd31d58f",
+    "content-hash": "41d625d69a7895a8ea90b9a12a9d9391",
     "packages": [
         {
             "name": "1994/social-images-core",
-            "version": "dev-main",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1994limited/social-images-core.git",
+                "reference": "f900f7f15897a82d2956729e30463defc5ba37d2"
+            },
             "dist": {
-                "type": "path",
-                "url": "../social-images-core",
-                "reference": "3c3bd2bcb08f3aff26eba7ba0a0210ba46526ebc"
+                "type": "zip",
+                "url": "https://api.github.com/repos/1994limited/social-images-core/zipball/f900f7f15897a82d2956729e30463defc5ba37d2",
+                "reference": "f900f7f15897a82d2956729e30463defc5ba37d2",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -40,11 +46,7 @@
                     "NineteenNinetyFour\\SocialImages\\Core\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "NineteenNinetyFour\\SocialImages\\Core\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -57,25 +59,31 @@
             ],
             "description": "The shared core of 1994's Social Images products: the template format, the page renderer, and the rendering contract with its drivers.",
             "keywords": [
-                "og image",
+                "OG Image",
                 "open graph",
                 "screenshot",
                 "social image"
             ],
             "support": {
-                "email": "hello@1994.co.uk"
+                "email": "hello@1994.co.uk",
+                "issues": "https://github.com/1994limited/social-images-core/issues",
+                "source": "https://github.com/1994limited/social-images-core/tree/v1.1.0"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-17T22:17:18+00:00"
         },
         {
             "name": "1994/social-images-craft",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1994limited/social-images-craft.git",
+                "reference": "a7934a41b51546dc23b04afa8318d99b4dd8e38c"
+            },
             "dist": {
-                "type": "path",
-                "url": "../social-images-craft",
-                "reference": "fd08f48c790abe79c4098d8a22238ba95782286d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/1994limited/social-images-craft/zipball/a7934a41b51546dc23b04afa8318d99b4dd8e38c",
+                "reference": "a7934a41b51546dc23b04afa8318d99b4dd8e38c",
+                "shasum": ""
             },
             "require": {
                 "1994/social-images-core": "^1.1",
@@ -94,6 +102,7 @@
                 "nystudio107/craft-seomatic": "To use the social image for SEOmatic's og:image and twitter:image.",
                 "spatie/browsershot": "To render images with Chrome on your server (the default renderer)."
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "social-images",
@@ -147,9 +156,7 @@
                 "issues": "https://github.com/1994limited/social-images-craft/issues",
                 "source": "https://github.com/1994limited/social-images-craft"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-17T22:17:55+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -9505,17 +9512,9 @@
             "time": "2025-02-13T21:05:12+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "1994/social-images-core",
-            "version": "1.1.9999999.9999999-dev",
-            "alias": "1.1.0",
-            "alias_normalized": "1.1.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "1994/social-images-core": 20,
         "1994/social-images-craft": 20
     },
     "prefer-stable": true,

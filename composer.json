@@ -4,8 +4,7 @@
   "require": {
     "craftcms/cms": "^5.9.0",
     "vlucas/phpdotenv": "^5.4.0",
-    "1994/social-images-craft": "@dev",
-    "1994/social-images-core": "1.1.x-dev as 1.1.0",
+    "1994/social-images-craft": "dev-main",
     "spatie/browsershot": "^5.0",
     "nystudio107/craft-seomatic": "^5.1"
   },
@@ -31,12 +30,9 @@
   "license": "proprietary",
   "repositories": [
     {
-      "type": "path",
-      "url": "../social-images-core"
-    },
-    {
-      "type": "path",
-      "url": "../social-images-craft"
+      "type": "vcs",
+      "url": "https://github.com/1994limited/social-images-craft.git",
+      "no-api": true
     }
   ],
   "autoload": {
