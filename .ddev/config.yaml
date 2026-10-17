@@ -1,0 +1,18 @@
+name: social-images-craft-demo
+type: craftcms
+docroot: web
+php_version: "8.3"
+webserver_type: nginx-fpm
+database:
+    type: mysql
+    version: "8.0"
+nodejs_version: "22"
+# Chrome for Browsershot.
+webimage_extra_packages: [chromium]
+web_environment:
+    - SOCIAL_IMAGES_NODE_BINARY=/usr/bin/node
+    - SOCIAL_IMAGES_NPM_BINARY=/usr/bin/npm
+    - SOCIAL_IMAGES_CHROME_PATH=/usr/bin/chromium
+    - SOCIAL_IMAGES_NODE_MODULES_PATH=/var/www/html/node_modules
+    - SOCIAL_IMAGES_NO_SANDBOX=1
+    - PUPPETEER_SKIP_DOWNLOAD=1

@@ -1,0 +1,7 @@
+{% extends '_layouts/site' %}
+
+{% block content %}
+    <h1>{{ entry.title }}</h1>
+    <p>{{ entry.author.fullName ?? '' }} · {{ entry.postDate|date('j F Y') }}</p>
+    {{ entry.body|nl2br }}
+{% endblock %}

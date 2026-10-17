@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "description": "Puppeteer, for Social Images' Browsershot renderer.",
+    "dependencies": {
+        "puppeteer": "^24.0.0"
+    }
+}

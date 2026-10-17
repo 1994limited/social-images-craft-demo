@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ currentSite.language }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {# SEOmatic adds the title and the share tags. Without it: #}
+    {% if not craft.app.plugins.isPluginEnabled('seomatic') %}
+        <title>{{ entry.title ?? siteName }}</title>
+        {{ craft.socialImages.meta(entry ?? null) }}
+    {% endif %}
+    <style>
+        body { max-width: 760px; margin: 40px auto; padding: 0 20px; font: 17px/1.5 Georgia, serif; color: #1f1a14; background: #f6f1e7; }
+        a { color: #7a2e3a; }
+        .share { margin-top: 40px; padding-top: 20px; border-top: 1px solid #d8cfbf; font: 14px/1.4 system-ui, sans-serif; }
+        .share img { display: block; max-width: 100%; height: auto; border-radius: 6px; margin-top: 8px; }
+        ul { padding-left: 1.2em; }
+    </style>
+</head>
+<body>
+    <p><a href="{{ siteUrl }}">Dog-ear Books</a></p>
+    {% block content %}{% endblock %}
+    {% if entry is defined and entry %}
+        {% set image = craft.socialImages.image(entry) %}
+        <div class="share">
+            This page’s social image (og:image):
+            {% if image %}<img src="{{ image.url }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}">{% else %} none yet.{% endif %}
+        </div>
+    {% endif %}
+</body>
+</html>

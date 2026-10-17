@@ -1,0 +1,9 @@
+{% extends '_layouts/site' %}
+
+{% block content %}
+    <h1>{{ entry.title }}</h1>
+    <p><em>{{ entry.byline }}</em> · £{{ entry.price }}</p>
+    {% set cover = entry.coverImage.one() %}
+    {% if cover %}<img src="{{ cover.url }}" alt="" width="240">{% endif %}
+    <p>{{ entry.blurb }}</p>
+{% endblock %}

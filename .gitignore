@@ -1,0 +1,9 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+/node_modules
+/storage/*
+!/storage/.gitkeep
+/web/cpresources
+/web/social-images

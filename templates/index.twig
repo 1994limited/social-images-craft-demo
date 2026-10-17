@@ -1,0 +1,10 @@
+{% extends '_layouts/site' %}
+
+{% block content %}
+    <h1>Dog-ear Books</h1>
+    <p>A made-up bookshop for trying Social Images. Each page below has its own share image, shown at the foot of the page.</p>
+    <h2>Books</h2>
+    <ul>{% for book in craft.entries.section('books').orderBy('title').all() %}<li><a href="{{ book.url }}">{{ book.title }}</a></li>{% endfor %}</ul>
+    <h2>Journal</h2>
+    <ul>{% for post in craft.entries.section('journal').all() %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>
+{% endblock %}
