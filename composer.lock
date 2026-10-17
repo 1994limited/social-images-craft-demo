@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41d625d69a7895a8ea90b9a12a9d9391",
+    "content-hash": "5b09f3f917ba7c73026cf05e9a70044e",
     "packages": [
         {
             "name": "1994/social-images-core",
@@ -73,16 +73,16 @@
         },
         {
             "name": "1994/social-images-craft",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1994limited/social-images-craft.git",
-                "reference": "15f7108a6a09615f7447e926cc3553ab72cc7eaa"
+                "reference": "192c14426a5bd0ccaa6ddd1ad6de98b7680f0632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1994limited/social-images-craft/zipball/15f7108a6a09615f7447e926cc3553ab72cc7eaa",
-                "reference": "15f7108a6a09615f7447e926cc3553ab72cc7eaa",
+                "url": "https://api.github.com/repos/1994limited/social-images-craft/zipball/192c14426a5bd0ccaa6ddd1ad6de98b7680f0632",
+                "reference": "192c14426a5bd0ccaa6ddd1ad6de98b7680f0632",
                 "shasum": ""
             },
             "require": {
@@ -102,32 +102,22 @@
                 "nystudio107/craft-seomatic": "To use the social image for SEOmatic's og:image and twitter:image.",
                 "spatie/browsershot": "To render images with Chrome on your server (the default renderer)."
             },
-            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
-                "handle": "social-images",
                 "name": "Social Images",
-                "developer": "1994",
-                "developerUrl": "https://1994.co.uk",
-                "documentationUrl": "https://github.com/1994limited/social-images-craft/blob/main/docs/README.md",
                 "class": "nineteenninetyfour\\socialimages\\Plugin",
-                "changelogUrl": "https://raw.githubusercontent.com/1994limited/social-images-craft/main/CHANGELOG.md"
+                "handle": "social-images",
+                "developer": "1994",
+                "changelogUrl": "https://raw.githubusercontent.com/1994limited/social-images-craft/main/CHANGELOG.md",
+                "developerUrl": "https://1994.co.uk",
+                "documentationUrl": "https://github.com/1994limited/social-images-craft/blob/main/docs/README.md"
             },
             "autoload": {
                 "psr-4": {
                     "nineteenninetyfour\\socialimages\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "nineteenninetyfour\\socialimages\\tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "codecept run"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -140,23 +130,23 @@
             ],
             "description": "Social share images for Craft CMS: design Open Graph cards in the control panel, bind them to your entries' fields, and have them generated on save. Templates import and export as JSON.",
             "keywords": [
+                "Craft",
+                "OG Image",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
-                "og image",
                 "open graph",
                 "seo",
                 "share image",
                 "social image"
             ],
             "support": {
-                "email": "hello@1994.co.uk",
                 "docs": "https://github.com/1994limited/social-images-craft/blob/main/docs/README.md",
+                "email": "hello@1994.co.uk",
                 "issues": "https://github.com/1994limited/social-images-craft/issues",
                 "source": "https://github.com/1994limited/social-images-craft"
             },
-            "time": "2026-10-17T22:40:43+00:00"
+            "time": "2026-10-17T22:49:01+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -9514,9 +9504,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "1994/social-images-craft": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},

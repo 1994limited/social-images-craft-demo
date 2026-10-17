@@ -4,7 +4,7 @@
   "require": {
     "craftcms/cms": "^5.9.0",
     "vlucas/phpdotenv": "^5.4.0",
-    "1994/social-images-craft": "dev-main",
+    "1994/social-images-craft": "^1.0",
     "spatie/browsershot": "^5.0",
     "nystudio107/craft-seomatic": "^5.1"
   },
@@ -28,13 +28,6 @@
   "name": "1994/social-images-craft-demo",
   "description": "Dog-ear Books: a demo site for Social Images for Craft.",
   "license": "proprietary",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/1994limited/social-images-craft.git",
-      "no-api": true
-    }
-  ],
   "autoload": {
     "psr-4": {
       "modules\\demo\\": "modules/demo/"

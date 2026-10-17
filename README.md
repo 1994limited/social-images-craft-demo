@@ -4,8 +4,6 @@ A made-up independent bookshop for trying [Social Images for Craft](https://gith
 
 The sections, fields, templates and Social Images' settings are in Project Config (`config/project`), so they're set up when Craft is installed. `php craft demo/content` adds the books, journal and writers; the covers and journal pictures are in `web/uploads`. SEOmatic is installed to show the integration (it runs as a trial on local sites).
 
-Social Images is installed from [its GitHub repository](https://github.com/1994limited/social-images-craft) until it's on Packagist and the Plugin Store.
-
 ## Running it with DDEV
 
 ```bash
