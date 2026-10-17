@@ -111,6 +111,22 @@ class ContentController extends Controller
         return ExitCode::OK;
     }
 
+    /**
+     * Prints an entry's ID, for the screenshots script.
+     */
+    public function actionId(string $section, string $slug): int
+    {
+        $entry = Entry::find()->section($section)->slug($slug)->status(null)->one();
+
+        if (! $entry) {
+            return ExitCode::UNSPECIFIED_ERROR;
+        }
+
+        $this->stdout($entry->id."\n");
+
+        return ExitCode::OK;
+    }
+
     protected function entry(string $section, string $slug): Entry
     {
         $section = Craft::$app->getEntries()->getSectionByHandle($section);

@@ -43,3 +43,7 @@ Sign in at `/admin` with the username and password you gave `craft install`. The
 - **Social Images → Settings**: Journal uses Editorial (and a square size too); Books use Book jacket.
 - Any book or journal entry: its Social image field.
 - The site itself: each page shows its share image at the foot, and its `<head>` has the tags (from SEOmatic).
+
+## Screenshots
+
+`node scripts/screenshots.mjs` takes the screenshots in the plugin's docs, from a running demo with its images made. It writes to `../social-images-craft/docs/images`, so run it with the plugin checked out beside the demo (or set `SCREENSHOTS`). It signs in as `admin` / `password`, or `CRAFT_USER` and `CRAFT_PASSWORD`.
